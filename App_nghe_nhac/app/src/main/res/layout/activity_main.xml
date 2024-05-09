@@ -4,18 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:background="@drawable/img_3">
+    android:background="@drawable/img"
+    tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/textView_ten_bai_hat"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="2dp"
         android:text="Tên bài hát"
-        android:layout_centerHorizontal="true"
-        android:textSize="25sp"
-        android:textColor="#FFFFFF"/>
+        android:textColor="#FFFFFF"
+        android:textSize="25sp" />
+
     <TextView
         android:id="@+id/textView_thoi_gian_bat_dau"
         android:layout_width="wrap_content"
@@ -24,20 +25,21 @@
         android:layout_marginLeft="5dp"
         android:layout_marginTop="360dp"
         android:text="00:00"
-        android:textSize="25sp"
-        android:textColor="#FFFFFF"/>
+        android:textColor="#FFFFFF"
+        android:textSize="25sp" />
+
     <TextView
         android:id="@+id/textView_thoi_gian_ket_thuc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_marginRight="5dp"
-        android:layout_alignRight="@id/textView_thoi_gian_bat_dau"
         android:layout_below="@id/textView_ten_bai_hat"
+        android:layout_alignRight="@id/textView_thoi_gian_bat_dau"
+        android:layout_alignParentRight="true"
         android:layout_marginTop="360dp"
+        android:layout_marginRight="5dp"
         android:text="00:51"
-        android:textSize="25sp"
-        android:textColor="#FFFFFF"/>
+        android:textColor="#FFFFFF"
+        android:textSize="25sp" />
 
     <SeekBar
         android:id="@+id/seeBar_thoi_gian"
@@ -79,7 +81,7 @@
         android:layout_below="@id/seeBar_thoi_gian"
         android:layout_marginLeft="40dp"
         android:layout_marginTop="10dp"
-       android:layout_toRightOf="@id/ImageButton_play"
+        android:layout_toRightOf="@id/ImageButton_play"
         android:background="@null"
         android:src="@drawable/baseline_stop_24" />
 
